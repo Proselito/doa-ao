@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doe sangue! Doe vida!</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+       <img class="logo" 
+            src="/logo.png" 
+            alt=" Imagem de DOE">
+        <h2> A sua doação importa</h2>
+        <p> Até 3 vidas com 1 doação </p>
+        <p> Mais de 38.000 doações são necessários todos os dias</p>
+        <p> Apenas 1,9% da população brasileira, doa sangue </p>
+        <button> Quero ajudar</button>
+    </header>
+    <section class="form hide">
+        <h2> Entre na lista de doadores</h2>
+        <form action="/" method="POST" >
+            <input type="text" 
+                    name="name" 
+                    placeholder="Nome Completo"
+            >
+
+            <input type="text" 
+                    name="Email" 
+                    placeholder="Email"
+            >
+
+            <input type="text" 
+                    name="blood" 
+                    placeholder="Tipo Sanguineo"
+            >
+
+            <button> Quero Ajudar </button>
+        </form>
+    </section>
+    
+    <main> 
+        <h2>Ultimos <span>doadores</span> </h2>
+
+        <section class="doadores">
+
+            {% for doador in doadores %}
+
+                <div class="doador">
+                    <div class="blood"> A+ </div>
+                    <p> {{doador.name}} </p>
+                </div>
+
+            {% endfor %}
+        </section>
+    </main>
+    <footer>Sê solidário</footer>
+
+    <script src="/scripts.js"></script>
+</body>
+</html>
