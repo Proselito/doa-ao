@@ -1,3 +1,7 @@
+O intuito do aplicativo é servir como um caminho mais curtos
+para as pessoas se cadastrarem em um banco de dados de doadores
+seja de sangue ou medula, de princípio só temos a parte do sangue
+futuramente iremos acrescentar outras partes.
 A aplicação seguinte funcionando melhor iniciado com o
 npm start.
 Ele ainda esta sendo finalizado, trabalhando a basa de dados que
